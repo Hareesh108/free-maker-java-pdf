@@ -533,9 +533,15 @@
             29th Floor, Menara Bank Islam<br />
             No.22 Jalan Perak<br />
             50450 Kuala Lumpur<br /><br />
-            Telephone no.:
-            <div>03-2088 8091/03-2088 8370/03-2088 811 (930am-4.30pm)</div>
-            email : IUTA@bankislam.com.my
+            <div>
+              Telephone no.:
+              <span>03-2088 8091/03-2088 8370/03-2088 811</span>
+            </div>
+            <div style="margin-left: 84px">(930am-4.30pm)</div>
+            <div>
+              email
+              <span style="margin-left: 45px">:</span> IUTA@bankislam.com.my
+            </div>
           </td>
         </tr>
         <tr style="vertical-align: top">
