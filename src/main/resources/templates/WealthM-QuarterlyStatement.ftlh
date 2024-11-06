@@ -214,6 +214,7 @@
       </p>
     </div>
 
+    <!-- INFO BOX -->
     <div style="margin-left: 5px; margin-top: 80px">
       <div
         style="
@@ -255,6 +256,8 @@
         </table>
       </div>
       <div style="width: 100%; border: none; border-top: 1px solid"></div>
+
+      <!-- TRANSACTION SUMMARY -->
       <div class="section-title">
         1) TRANSACTION SUMMARY AS AT ${contextVariables.date!}
       </div>
@@ -266,6 +269,7 @@
           margin-top: 3px;
         "
       ></div>
+
       <table class="table">
         <tr>
           <th style="width: 100px; max-width: 100px; vertical-align: top">
@@ -300,6 +304,7 @@
         </tr>
       </table>
 
+      <!-- TRANSACTION DETAILS  -->
       <div style="margin-top: 50px">
         <div class="section-title">2) TRANSACTION DETAILS AS AT</div>
         <div
