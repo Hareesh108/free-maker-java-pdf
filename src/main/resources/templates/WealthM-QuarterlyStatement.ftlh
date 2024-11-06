@@ -86,6 +86,10 @@
         padding: 5px;
         width: 50%;
       }
+
+      .page-break {
+        page-break-before: always;
+      }
     </style>
   </head>
 
@@ -412,6 +416,8 @@
           BIMBMYKL www.bankislam.com.my
         </p>
       </div>
+
+      <div class="page-break"></div>
       <table
         style="
           width: 100%;
