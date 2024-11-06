@@ -314,13 +314,12 @@
             </th>
             <th style="max-width: 130px; min-width: 130px; text-align: center">
               &lt;--- Charge Amount ---&gt; <br />
-              <div style="display: inline">
+              <div style="display: inline; text-align: right">
                 <div
                   style="
                     max-width: 87px;
                     min-width: 87px;
                     display: inline-block;
-                    text-align: center;
                   "
                 >
                   %
@@ -330,7 +329,6 @@
                     max-width: 40px;
                     min-width: 40px;
                     display: inline-block;
-                    text-align: center;
                   "
                 >
                   (RM)
@@ -363,13 +361,12 @@
             <td>14/10/2022</td>
             <td style="text-align: right">-39,400.49</td>
             <td style="text-align: right">
-              <div style="display: inline">
+              <div style="display: inline; text-align: right">
                 <div
                   style="
                     max-width: 87px;
                     min-width: 87px;
                     display: inline-block;
-                    text-align: center;
                   "
                 >
                   0.0000
@@ -379,7 +376,7 @@
                     max-width: 40px;
                     min-width: 40px;
                     display: inline-block;
-                    text-align: center;
+                    padding-right: 1px;
                   "
                 >
                   0.0
@@ -404,13 +401,12 @@
             <td>12/08/2022</td>
             <td style="text-align: right">-14,137.50</td>
             <td style="text-align: right">
-              <div style="display: inline">
+              <div style="display: inline; text-align: right">
                 <div
                   style="
                     max-width: 87px;
                     min-width: 87px;
                     display: inline-block;
-                    text-align: center;
                   "
                 >
                   0.0000
@@ -420,7 +416,6 @@
                     max-width: 40px;
                     min-width: 40px;
                     display: inline-block;
-                    text-align: center;
                   "
                 >
                   0.0
@@ -504,7 +499,10 @@
         </p>
       </div>
 
+      <!-- PAGE BREAK -->
       <div class="page-break"></div>
+
+      <!-- PURPOSE AND CONTACT INFORMATION -->
       <table
         style="
           width: 100%;
@@ -513,11 +511,11 @@
           margin-top: 50px;
         "
       >
-        <tr>
+        <tr style="vertical-align: top">
           <th class="tableHeaderInfo">Purpose</th>
           <th class="tableHeaderInfo">Contact Information</th>
         </tr>
-        <tr>
+        <tr style="vertical-align: top">
           <td class="tableColInfo">Suggestion,Compliment or Complaint</td>
           <td class="tableColInfo">
             Bank Islam Contact Centre<br />
@@ -525,7 +523,7 @@
             email: contactcenter@bankislam.com.my
           </td>
         </tr>
-        <tr>
+        <tr style="vertical-align: top">
           <td class="tableColInfo">
             Unit Trust Operation Related Matter i.e Statement and Reporting
           </td>
@@ -540,7 +538,7 @@
             email : IUTA@bankislam.com.my
           </td>
         </tr>
-        <tr>
+        <tr style="vertical-align: top">
           <td class="tableColInfo">
             Unit Trust Sales Related Matter i.e Unit Trust Product, Unit Trust
             Investment Performance, Unit Trust Application Processing
