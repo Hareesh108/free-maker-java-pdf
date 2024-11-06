@@ -264,19 +264,28 @@
       ></div>
       <table class="table">
         <tr>
-          <th style="width: 100px; max-width: 100px">Fund Name</th>
-          <th style="max-width: 80px; text-align: right">
+          <th style="width: 100px; max-width: 100px; vertical-align: top">
+            Fund Name
+          </th>
+          <th style="max-width: 80px; text-align: right; vertical-align: top">
             Previous <br />
             Balance (Unit)
           </th>
-          <th style="width: 200px; max-width: 200px">Name of Joint Holder</th>
-          <th style="max-width: 100px; text-align: right">
+          <th style="width: 200px; max-width: 200px; vertical-align: top">
+            Name of Joint Holder
+          </th>
+          <th style="max-width: 100px; text-align: right; vertical-align: top">
             Current <br />
             Balance (Unit)
           </th>
-          <th style="max-width: 100px; text-align: right">NAV (RM)</th>
-          <th style="max-width: 120px; text-align: right">Balance (RM)</th>
+          <th style="max-width: 100px; text-align: right; vertical-align: top">
+            NAV (RM)
+          </th>
+          <th style="max-width: 120px; text-align: right; vertical-align: top">
+            Balance (RM)
+          </th>
         </tr>
+
         <tr>
           <td>BANK ISLAM PR EMIER FUND</td>
           <td style="text-align: right">60,132.29</td>
