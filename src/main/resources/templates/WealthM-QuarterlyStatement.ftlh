@@ -230,7 +230,6 @@
             <th class="not-bold" style="padding: 0">Account Number</th>
             <td class="padding-td">:</td>
             <td style="padding: 0">${contextVariables.accountNo!}</td>
-            <!-- <td style="padding: 0">100954</td> -->
           </tr>
           <tr>
             <th class="not-bold" style="padding: 0">
@@ -265,20 +264,26 @@
       ></div>
       <table class="table">
         <tr>
-          <th>Fund Name</th>
-          <th>Previous Balance (Unit)</th>
-          <th>Name of Joint Holder</th>
-          <th>Current Balance (Unit)</th>
-          <th>NAV (RM)</th>
-          <th>Balance (RM)</th>
+          <th style="width: 100px; max-width: 100px">Fund Name</th>
+          <th style="max-width: 80px; text-align: right">
+            Previous <br />
+            Balance (Unit)
+          </th>
+          <th style="width: 200px; max-width: 200px">Name of Joint Holder</th>
+          <th style="max-width: 100px; text-align: right">
+            Current <br />
+            Balance (Unit)
+          </th>
+          <th style="max-width: 100px; text-align: right">NAV (RM)</th>
+          <th style="max-width: 120px; text-align: right">Balance (RM)</th>
         </tr>
         <tr>
-          <td>BANK ISLAM PR</td>
-          <td>60,132.29</td>
-          <td>--</td>
-          <td>0.00</td>
-          <td>0.9465</td>
-          <td>0.00</td>
+          <td>BANK ISLAM PR EMIER FUND</td>
+          <td style="text-align: right">60,132.29</td>
+          <td></td>
+          <td style="text-align: right">0.00</td>
+          <td style="text-align: right">0.9465</td>
+          <td style="text-align: right">0.00</td>
         </tr>
       </table>
 
