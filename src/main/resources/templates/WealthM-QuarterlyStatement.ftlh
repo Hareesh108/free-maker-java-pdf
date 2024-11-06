@@ -54,14 +54,13 @@
       .table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 5px;
+        margin-top: 4px;
         font-size: 12px;
       }
 
-      .table th,
-      .table td {
-        padding: 5px;
+      .table th {
         text-align: left;
+        border-top: 1px solid #000;
       }
 
       .table th {
@@ -261,14 +260,6 @@
       <div class="section-title">
         1) TRANSACTION SUMMARY AS AT ${contextVariables.date!}
       </div>
-      <div
-        style="
-          width: 100%;
-          border: none;
-          border-top: 1px solid;
-          margin-top: 3px;
-        "
-      ></div>
 
       <table class="table">
         <tr>
@@ -294,7 +285,7 @@
           </th>
         </tr>
 
-        <tr>
+        <tr style="vertical-align: top">
           <td>BANK ISLAM PR EMIER FUND</td>
           <td style="text-align: right">60,132.29</td>
           <td></td>
@@ -307,47 +298,138 @@
       <!-- TRANSACTION DETAILS  -->
       <div style="margin-top: 50px">
         <div class="section-title">2) TRANSACTION DETAILS AS AT</div>
-        <div
-          style="
-            width: 100%;
-            border: none;
-            border-top: 1px solid;
-            margin-top: 3px;
-          "
-        ></div>
+
         <table class="table">
-          <tr>
-            <th>Trans Type</th>
-            <th>Prod Type</th>
+          <tr style="vertical-align: top">
+            <th style="max-width: 25px; min-width: 25px">Trans Type</th>
+            <th style="max-width: 30px; min-width: 30px">Prod Type</th>
             <th>Trans No</th>
-            <th>Trans Date</th>
-            <th>Amount Paid (RM)</th>
-            <th>Charge Amount</th>
-            <th>Amount Invested/Redeemed (RM)</th>
-            <th>NAV (RM)</th>
-            <th>Total Units</th>
+            <th style="max-width: 62px; min-width: 62px">
+              Trans <br />
+              Date
+            </th>
+            <th style="max-width: 75px; min-width: 75px; text-align: right">
+              Amount Paid <br />
+              (RM)
+            </th>
+            <th style="max-width: 130px; min-width: 130px; text-align: center">
+              &lt;--- Charge Amount ---&gt; <br />
+              <div style="display: inline">
+                <div
+                  style="
+                    max-width: 87px;
+                    min-width: 87px;
+                    display: inline-block;
+                    text-align: center;
+                  "
+                >
+                  %
+                </div>
+                <div
+                  style="
+                    max-width: 40px;
+                    min-width: 40px;
+                    display: inline-block;
+                    text-align: center;
+                  "
+                >
+                  (RM)
+                </div>
+              </div>
+            </th>
+            <th style="max-width: 98px; min-width: 98px; text-align: right">
+              Amount Invested/ <br />
+              Redeemed (RM)
+            </th>
+            <th style="max-width: 65px; min-width: 65px; text-align: right">
+              NAV (RM)
+            </th>
+            <th style="max-width: 80px; min-width: 80px; text-align: right">
+              Total <br />
+              Units
+            </th>
           </tr>
-          <tr>
+
+          <tr style="vertical-align: top">
             <td>RE</td>
-            <td>CASH</td>
-            <td>2022002</td>
+            <td>
+              CASH <br />
+              PLAN
+            </td>
+            <td>
+              2022002 <br />
+              1690
+            </td>
             <td>14/10/2022</td>
-            <td>-39,400.49</td>
-            <td>0.0000</td>
-            <td>0.00</td>
-            <td>0.8730</td>
-            <td>45,132.29</td>
+            <td style="text-align: right">-39,400.49</td>
+            <td style="text-align: right">
+              <div style="display: inline">
+                <div
+                  style="
+                    max-width: 87px;
+                    min-width: 87px;
+                    display: inline-block;
+                    text-align: center;
+                  "
+                >
+                  0.0000
+                </div>
+                <div
+                  style="
+                    max-width: 40px;
+                    min-width: 40px;
+                    display: inline-block;
+                    text-align: center;
+                  "
+                >
+                  0.0
+                </div>
+              </div>
+            </td>
+            <td style="text-align: right">0.00</td>
+            <td style="text-align: right">0.8730</td>
+            <td style="text-align: right">-45,132.29</td>
           </tr>
-          <tr>
+
+          <tr style="vertical-align: top">
             <td>RE</td>
-            <td>CASH</td>
-            <td>2022002</td>
+            <td>
+              CASH <br />
+              PLAN
+            </td>
+            <td>
+              2022002 <br />
+              0603
+            </td>
             <td>12/08/2022</td>
-            <td>-14,137.50</td>
-            <td>0.0000</td>
-            <td>0.00</td>
-            <td>0.9425</td>
-            <td>15,000.00</td>
+            <td style="text-align: right">-14,137.50</td>
+            <td style="text-align: right">
+              <div style="display: inline">
+                <div
+                  style="
+                    max-width: 87px;
+                    min-width: 87px;
+                    display: inline-block;
+                    text-align: center;
+                  "
+                >
+                  0.0000
+                </div>
+                <div
+                  style="
+                    max-width: 40px;
+                    min-width: 40px;
+                    display: inline-block;
+                    text-align: center;
+                  "
+                >
+                  0.0
+                </div>
+              </div>
+            </td>
+            <td style="text-align: right">0.00</td>
+            <td style="text-align: right">0.9425</td>
+            <td style="text-align: right">-15,000.00</td>
           </tr>
         </table>
       </div>
