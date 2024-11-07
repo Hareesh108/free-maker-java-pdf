@@ -20,7 +20,7 @@ public class Pdf {
 
 		Path pdfFile = Paths.get("output.pdf");
 		try {
-			pdfService.generatePdfFileFromTemplate("WealthM-QuarterlyStatement.ftlh", pdfFile);
+			pdfService.generatePdfFileFromTemplate("test.ftlh", pdfFile);
 		} catch (Exception exception) {
 			System.out.println(exception.getMessage());
 		}
