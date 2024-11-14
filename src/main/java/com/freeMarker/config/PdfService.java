@@ -15,6 +15,7 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -118,17 +119,59 @@ public class PdfService {
         // 1).format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
         // ctxVarsMap.put("overDueAmount", 2000.0);
 
-        ctxVarsMap.put("name", "");
-        ctxVarsMap.put("address", "");
-        ctxVarsMap.put("branch", "Downtown Branch");
-        ctxVarsMap.put("accountNo", "1234567890");
-        ctxVarsMap.put("typeOfFinancing", "Personal Loan");
-        ctxVarsMap.put("dueDate", "2024-12-31");
-        ctxVarsMap.put("date", "4/12/2023");
-        ctxVarsMap.put("installmentMonthlyRent", "6000");
-        ctxVarsMap.put("fundingAmount", "2000");
-        ctxVarsMap.put("overDueAmount", "5500");
+        // ctxVarsMap.put("name", "");
+        // ctxVarsMap.put("address", "");
+        // ctxVarsMap.put("branch", "Downtown Branch");
+        // ctxVarsMap.put("accountNo", "1234567890");
+        // ctxVarsMap.put("typeOfFinancing", "Personal Loan");
+        // ctxVarsMap.put("dueDate", "2024-12-31");
+        // ctxVarsMap.put("date", "4/12/2023");
+        // ctxVarsMap.put("installmentMonthlyRent", "6000");
+        // ctxVarsMap.put("fundingAmount", "2000");
+        // ctxVarsMap.put("overDueAmount", "5500");
 
+        // return ctxVarsMap;
+
+        ctxVarsMap.put("name", "SYED ALI BIN SYED ABDUL KADIR");
+        ctxVarsMap.put("add1", "72 JALAN RUSA");
+        ctxVarsMap.put("add2", "TAMAN BEROLEH");
+        ctxVarsMap.put("add3", "83000");
+        ctxVarsMap.put("add4", "JOHOR");
+        ctxVarsMap.put("add5", "KUALA LUMPUR");
+        ctxVarsMap.put("poscode", "12345");
+        ctxVarsMap.put("add6", "JALAN RUSA");
+        ctxVarsMap.put("add7", "JOHOR");
+        ctxVarsMap.put("accountNo", "7788994455");
+        ctxVarsMap.put("unitTrustConsultant", "ERNI ROHANI BINTI AHMAD");
+        ctxVarsMap.put("unitTrustContactNo", "9988662020");
+        ctxVarsMap.put("branchName", "Kuala Lumpur");
+        ctxVarsMap.put("date", "01/11/2024");
+        ctxVarsMap.put("fundName", "BIMB DANA AL-FAKHIM I CLASS (NON-INDIVIDUAL)");
+        ctxVarsMap.put("previousBalanceUnit", "28,764.08");
+        ctxVarsMap.put("nameOfJointHolder", "ERNI ROHANI BINTI AHMAD");
+        ctxVarsMap.put("currentBalanceUnit", "0.00");
+        ctxVarsMap.put("currentNav", "0.5178");
+        ctxVarsMap.put("balance", "0.00");
+        ctxVarsMap.put("country", "MALAYSIA");
+
+        // -------- Dynamic values for wealth-management
+        // ------------------------------------------------------
+
+        List<Map<String, Object>> rows = new ArrayList<>();
+        Map<String, Object> row1 = new HashMap<>();
+        row1.put("transactionType", "Purchase");
+        row1.put("productType", "Equity");
+        row1.put("transactionNo", "TRX123456");
+        row1.put("transactionDate", LocalDate.parse("2024-10-15"));
+        row1.put("amountPaid", "1,000.00");
+        row1.put("chargeAmountPercentage", "1%");
+        row1.put("chargeAmountRm", "10.00");
+        row1.put("amountInvestedRedeemed", "990.00");
+        row1.put("nav", "0.52");
+        row1.put("totalUnits", "1900.00");
+        rows.add(row1);
+        ctxVarsMap.put("rows", rows);
         return ctxVarsMap;
     }
+
 }

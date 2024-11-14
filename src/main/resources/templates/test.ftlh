@@ -39,6 +39,32 @@
         border: 2px solid red;
       }
 
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 10px;
+        page-break-inside: auto;
+      }
+
+      thead {
+        display: table-header-group;
+      }
+
+      tbody {
+        display: table-row-group;
+      }
+
+      tr {
+        page-break-inside: avoid;
+      }
+
+      td,
+      th {
+        border: 1px solid #000;
+        padding: 4px;
+        text-align: center;
+      }
+
       footer {
         font-size: 11px;
         border: 2px solid;
@@ -163,212 +189,1554 @@
         <div class="section-title">2) TRANSACTION DETAILS AS AT</div>
 
         <table style="font-size: 10px">
-          <tr style="vertical-align: top">
-            <th style="max-width: 25px; min-width: 25px">Trans Type</th>
-            <th style="max-width: 30px; min-width: 30px">Prod Type</th>
-            <th>Trans No</th>
-            <th style="max-width: 62px; min-width: 62px">
-              Trans <br />
-              Date
-            </th>
-            <th style="max-width: 75px; min-width: 75px; text-align: right">
-              Amount Paid <br />
-              (RM)
-            </th>
-            <th style="max-width: 130px; min-width: 130px; text-align: center">
-              &lt;--- Charge Amount ---&gt; <br />
-              <div style="display: inline; text-align: right">
-                <div
-                  style="
-                    max-width: 87px;
-                    min-width: 87px;
-                    display: inline-block;
-                  "
-                >
-                  %
+          <thead>
+            <tr style="vertical-align: top">
+              <th style="max-width: 25px; min-width: 25px">Trans Type</th>
+              <th style="max-width: 30px; min-width: 30px">Prod Type</th>
+              <th>Trans No</th>
+              <th style="max-width: 62px; min-width: 62px">
+                Trans <br />
+                Date
+              </th>
+              <th style="max-width: 75px; min-width: 75px; text-align: right">
+                Amount Paid <br />
+                (RM)
+              </th>
+              <th
+                style="max-width: 130px; min-width: 130px; text-align: center"
+              >
+                &lt;--- Charge Amount ---&gt; <br />
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    %
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                    "
+                  >
+                    (RM)
+                  </div>
                 </div>
-                <div
-                  style="
-                    max-width: 40px;
-                    min-width: 40px;
-                    display: inline-block;
-                  "
-                >
-                  (RM)
-                </div>
-              </div>
-            </th>
-            <th style="max-width: 98px; min-width: 98px; text-align: right">
-              Amount Invested/ <br />
-              Redeemed (RM)
-            </th>
-            <th style="max-width: 65px; min-width: 65px; text-align: right">
-              NAV (RM)
-            </th>
-            <th style="max-width: 80px; min-width: 80px; text-align: right">
-              Total <br />
-              Units
-            </th>
-          </tr>
+              </th>
+              <th style="max-width: 98px; min-width: 98px; text-align: right">
+                Amount Invested/ <br />
+                Redeemed (RM)
+              </th>
+              <th style="max-width: 65px; min-width: 65px; text-align: right">
+                NAV (RM)
+              </th>
+              <th style="max-width: 80px; min-width: 80px; text-align: right">
+                Total <br />
+                Units
+              </th>
+            </tr>
+          </thead>
 
-          <tr style="vertical-align: top">
-            <td>RE</td>
-            <td>
-              CASH <br />
-              PLAN
-            </td>
-            <td>
-              2022002 <br />
-              1690
-            </td>
-            <td>14/10/2022</td>
-            <td style="text-align: right">-39,400.49</td>
-            <td style="text-align: right">
-              <div style="display: inline; text-align: right">
-                <div
-                  style="
-                    max-width: 87px;
-                    min-width: 87px;
-                    display: inline-block;
-                  "
-                >
-                  0.0000
+          <tbody>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
                 </div>
-                <div
-                  style="
-                    max-width: 40px;
-                    min-width: 40px;
-                    display: inline-block;
-                    padding-right: 1px;
-                  "
-                >
-                  0.0
-                </div>
-              </div>
-            </td>
-            <td style="text-align: right">0.00</td>
-            <td style="text-align: right">0.8730</td>
-            <td style="text-align: right">-45,132.29</td>
-          </tr>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
 
-          <tr style="vertical-align: top">
-            <td>RE</td>
-            <td>
-              CASH <br />
-              PLAN
-            </td>
-            <td>
-              2022002 <br />
-              1690
-            </td>
-            <td>14/10/2022</td>
-            <td style="text-align: right">-39,400.49</td>
-            <td style="text-align: right">
-              <div style="display: inline; text-align: right">
-                <div
-                  style="
-                    max-width: 87px;
-                    min-width: 87px;
-                    display: inline-block;
-                  "
-                >
-                  0.0000
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
                 </div>
-                <div
-                  style="
-                    max-width: 40px;
-                    min-width: 40px;
-                    display: inline-block;
-                    padding-right: 1px;
-                  "
-                >
-                  0.0
-                </div>
-              </div>
-            </td>
-            <td style="text-align: right">0.00</td>
-            <td style="text-align: right">0.8730</td>
-            <td style="text-align: right">-45,132.29</td>
-          </tr>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
 
-          <tr style="vertical-align: top">
-            <td>RE</td>
-            <td>
-              CASH <br />
-              PLAN
-            </td>
-            <td>
-              2022002 <br />
-              1690
-            </td>
-            <td>14/10/2022</td>
-            <td style="text-align: right">-39,400.49</td>
-            <td style="text-align: right">
-              <div style="display: inline; text-align: right">
-                <div
-                  style="
-                    max-width: 87px;
-                    min-width: 87px;
-                    display: inline-block;
-                  "
-                >
-                  0.0000
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
                 </div>
-                <div
-                  style="
-                    max-width: 40px;
-                    min-width: 40px;
-                    display: inline-block;
-                    padding-right: 1px;
-                  "
-                >
-                  0.0
-                </div>
-              </div>
-            </td>
-            <td style="text-align: right">0.00</td>
-            <td style="text-align: right">0.8730</td>
-            <td style="text-align: right">-45,132.29</td>
-          </tr>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
 
-          <tr style="vertical-align: top">
-            <td>RE</td>
-            <td>
-              CASH <br />
-              PLAN
-            </td>
-            <td>
-              2022002 <br />
-              0603
-            </td>
-            <td>12/08/2022</td>
-            <td style="text-align: right">-14,137.50</td>
-            <td style="text-align: right">
-              <div style="display: inline; text-align: right">
-                <div
-                  style="
-                    max-width: 87px;
-                    min-width: 87px;
-                    display: inline-block;
-                  "
-                >
-                  0.0000
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
                 </div>
-                <div
-                  style="
-                    max-width: 40px;
-                    min-width: 40px;
-                    display: inline-block;
-                  "
-                >
-                  0.0
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td style="text-align: right">0.00</td>
-            <td style="text-align: right">0.9425</td>
-            <td style="text-align: right">-15,000.00</td>
-          </tr>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                1690
+              </td>
+              <td>14/10/2022</td>
+              <td style="text-align: right">-39,400.49</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                      padding-right: 1px;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.8730</td>
+              <td style="text-align: right">-45,132.29</td>
+            </tr>
+
+            <tr style="vertical-align: top">
+              <td>RE</td>
+              <td>
+                CASH <br />
+                PLAN
+              </td>
+              <td>
+                2022002 <br />
+                0603
+              </td>
+              <td>12/08/2022</td>
+              <td style="text-align: right">-14,137.50</td>
+              <td style="text-align: right">
+                <div style="display: inline; text-align: right">
+                  <div
+                    style="
+                      max-width: 87px;
+                      min-width: 87px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0000
+                  </div>
+                  <div
+                    style="
+                      max-width: 40px;
+                      min-width: 40px;
+                      display: inline-block;
+                    "
+                  >
+                    0.0
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: right">0.00</td>
+              <td style="text-align: right">0.9425</td>
+              <td style="text-align: right">-15,000.00</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </main>
