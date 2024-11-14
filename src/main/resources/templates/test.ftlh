@@ -103,19 +103,22 @@
     </header>
 
     <footer>
+      <div
+        style="
+          width: 100%;
+          border: none;
+          border-top: 1px dashed #000;
+          margin-top: 3px;
+        "
+      ></div>
       <p style="line-height: 1.2; font-size: 12px">
-        This is computer generated advice and no signature is required. Please
-        advise Bank Islam within seven (7) business days from the date of
-        issuance of this advice if there is any discrepancy. For any change of
-        information, kindly visit our nearest branch.
+        This is computer generated advice and no signature is required.
       </p>
       <div style="font-size: 12px; text-align: center">
         <p>
           <span style="font-family: EmbArial">Bank Islam Malaysia Berhad</span>
           <span style="font-size: 8px">(No. 98127-X)</span> Level 32, Menara
-          Bank Islam,No. 22, Jalan Perak, 50450 Kuala Lumpur.Tel: (603) 2088
-          8000 Fax: (603) 2088 8028 Telex: MA 31783 Swift: BIMBMYKL
-          www.bankislam.com.my
+          Bank Islam, No. 22, Jalan Perak, 50450 Kuala Lumpur.
         </p>
       </div>
     </footer>
@@ -129,47 +132,9 @@
           voluptate repellat. Quis, doloribus. Illo alias vitae, debitis odit ut
           deleniti aliquam magni facere, est perspiciatis aperiam ea fugiat
           minima voluptas corrupti. Labore quisquam eos vero perferendis cumque
-          suscipit odio similique culpa totam iusto! Sequi quasi iste numquam
-          quos officiis natus, repellendus facilis doloribus voluptatibus magnam
-          officia, ad minima ipsa consectetur incidunt tenetur. Nobis doloribus
-          quod, sapiente consequuntur amet assumenda autem nesciunt natus
-          ducimus. Id reprehenderit optio consectetur porro magnam, quod alias
-          repellat quo modi praesentium in aperiam. Officiis id ex incidunt odio
-          ut aliquid, deserunt a, nam molestias, dolorum ipsa enim aspernatur
-          quo. Ducimus, ullam quibusdam. Eius eos maiores maxime aliquam,
-          tempora delectus, amet non quos necessitatibus, laudantium cumque
-          consequatur ducimus impedit iure eveniet autem rem! Accusantium unde
-          quos magni, laborum deserunt iste. Voluptatum quo perspiciatis
-          voluptate deserunt optio veritatis ipsam accusamus sequi alias id amet
-          sint enim rem vitae voluptatem sunt laboriosam, perferendis at et
-          doloremque soluta iure suscipit eos. Odit, corporis? Commodi ipsam
-          eligendi sunt unde? Voluptatem quos similique sunt voluptatum minima
-          veritatis perspiciatis aliquam nemo ipsum consequatur magni tenetur
-          enim mollitia, in, optio assumenda, commodi animi quaerat! Deserunt,
-          id officiis. Numquam rerum quia iure atque iusto, unde ex ducimus? Ad
-          aspernatur, maxime, impedit optio at deleniti earum doloremque, culpa
-          vero laborum possimus necessitatibus facere nisi ipsam quaerat. Alias,
-          dolorum at. Autem, iusto numquam ab labore voluptate voluptatum
-          commodi odit. Molestias, rem perspiciatis in cumque, exercitationem
-          distinctio sunt voluptatum temporibus maxime consequatur recusandae
-          dolorum harum porro neque quaerat, eum tenetur assumenda. Omnis,
-          repellat amet. A aperiam tenetur in consectetur, voluptates
           cupiditate, pariatur odit incidunt atque fuga fugit sequi cumque unde!
-          Porro quae nemo hic explicabo similique quam? Earum quidem expedita
-          dolorem! Quis debitis recusandae necessitatibus sint officia quam
-          laudantium veniam sequi rerum, adipisci ducimus rem autem odit eveniet
-          consectetur architecto asperiores corrupti mollitia, unde fugiat
-          aperiam eius. Quas porro provident exercitationem. Ex accusamus magni
-          reprehenderit quam, debitis, quia nam maxime est aliquid, eum fugit
-          itaque tempore repudiandae molestias nemo quasi. Nostrum maiores
-          expedita illum iure, cupiditate repellat quae eaque impedit suscipit?
-          Doloribus vitae natus eligendi veniam illo quos aspernatur! Quisquam
-          ex, distinctio facere qui aspernatur beatae reprehenderit adipisci
-          provident praesentium nesciunt quidem veritatis incidunt delectus
-          reiciendis necessitatibus ab atque soluta nisi? Debitis consectetur,
-          expedita eveniet assumenda pariatur temporibus voluptatum fugit illum
-          necessitatibus nulla et nam asperiores numquam harum inventore veniam
-          ea tenetur error quibusdam omnis quas consequatur? Vero illum harum
+          Porro quae nemo hic explicabo similique quam? Earum quidem expedi ea
+          tenetur error quibusdam omnis quas consequatur? Vero illum harum
           explicabo? Nisi asperiores ullam iure, sunt deleniti, rerum corrupti
           nulla dolores deserunt commodi at tempora aliquid, non magnam quidem
           dolorem enim repellendus rem harum odit? Tenetur quod pariatur totam
@@ -192,6 +157,219 @@
           tempore mollitia, modi quo vel neque, eaque veritatis a! Blanditiis
           deleniti est commodi iusto, non ab fugit!
         </p>
+      </div>
+
+      <div style="margin-top: 50px">
+        <div class="section-title">2) TRANSACTION DETAILS AS AT</div>
+
+        <table style="font-size: 10px">
+          <tr style="vertical-align: top">
+            <th style="max-width: 25px; min-width: 25px">Trans Type</th>
+            <th style="max-width: 30px; min-width: 30px">Prod Type</th>
+            <th>Trans No</th>
+            <th style="max-width: 62px; min-width: 62px">
+              Trans <br />
+              Date
+            </th>
+            <th style="max-width: 75px; min-width: 75px; text-align: right">
+              Amount Paid <br />
+              (RM)
+            </th>
+            <th style="max-width: 130px; min-width: 130px; text-align: center">
+              &lt;--- Charge Amount ---&gt; <br />
+              <div style="display: inline; text-align: right">
+                <div
+                  style="
+                    max-width: 87px;
+                    min-width: 87px;
+                    display: inline-block;
+                  "
+                >
+                  %
+                </div>
+                <div
+                  style="
+                    max-width: 40px;
+                    min-width: 40px;
+                    display: inline-block;
+                  "
+                >
+                  (RM)
+                </div>
+              </div>
+            </th>
+            <th style="max-width: 98px; min-width: 98px; text-align: right">
+              Amount Invested/ <br />
+              Redeemed (RM)
+            </th>
+            <th style="max-width: 65px; min-width: 65px; text-align: right">
+              NAV (RM)
+            </th>
+            <th style="max-width: 80px; min-width: 80px; text-align: right">
+              Total <br />
+              Units
+            </th>
+          </tr>
+
+          <tr style="vertical-align: top">
+            <td>RE</td>
+            <td>
+              CASH <br />
+              PLAN
+            </td>
+            <td>
+              2022002 <br />
+              1690
+            </td>
+            <td>14/10/2022</td>
+            <td style="text-align: right">-39,400.49</td>
+            <td style="text-align: right">
+              <div style="display: inline; text-align: right">
+                <div
+                  style="
+                    max-width: 87px;
+                    min-width: 87px;
+                    display: inline-block;
+                  "
+                >
+                  0.0000
+                </div>
+                <div
+                  style="
+                    max-width: 40px;
+                    min-width: 40px;
+                    display: inline-block;
+                    padding-right: 1px;
+                  "
+                >
+                  0.0
+                </div>
+              </div>
+            </td>
+            <td style="text-align: right">0.00</td>
+            <td style="text-align: right">0.8730</td>
+            <td style="text-align: right">-45,132.29</td>
+          </tr>
+
+          <tr style="vertical-align: top">
+            <td>RE</td>
+            <td>
+              CASH <br />
+              PLAN
+            </td>
+            <td>
+              2022002 <br />
+              1690
+            </td>
+            <td>14/10/2022</td>
+            <td style="text-align: right">-39,400.49</td>
+            <td style="text-align: right">
+              <div style="display: inline; text-align: right">
+                <div
+                  style="
+                    max-width: 87px;
+                    min-width: 87px;
+                    display: inline-block;
+                  "
+                >
+                  0.0000
+                </div>
+                <div
+                  style="
+                    max-width: 40px;
+                    min-width: 40px;
+                    display: inline-block;
+                    padding-right: 1px;
+                  "
+                >
+                  0.0
+                </div>
+              </div>
+            </td>
+            <td style="text-align: right">0.00</td>
+            <td style="text-align: right">0.8730</td>
+            <td style="text-align: right">-45,132.29</td>
+          </tr>
+
+          <tr style="vertical-align: top">
+            <td>RE</td>
+            <td>
+              CASH <br />
+              PLAN
+            </td>
+            <td>
+              2022002 <br />
+              1690
+            </td>
+            <td>14/10/2022</td>
+            <td style="text-align: right">-39,400.49</td>
+            <td style="text-align: right">
+              <div style="display: inline; text-align: right">
+                <div
+                  style="
+                    max-width: 87px;
+                    min-width: 87px;
+                    display: inline-block;
+                  "
+                >
+                  0.0000
+                </div>
+                <div
+                  style="
+                    max-width: 40px;
+                    min-width: 40px;
+                    display: inline-block;
+                    padding-right: 1px;
+                  "
+                >
+                  0.0
+                </div>
+              </div>
+            </td>
+            <td style="text-align: right">0.00</td>
+            <td style="text-align: right">0.8730</td>
+            <td style="text-align: right">-45,132.29</td>
+          </tr>
+
+          <tr style="vertical-align: top">
+            <td>RE</td>
+            <td>
+              CASH <br />
+              PLAN
+            </td>
+            <td>
+              2022002 <br />
+              0603
+            </td>
+            <td>12/08/2022</td>
+            <td style="text-align: right">-14,137.50</td>
+            <td style="text-align: right">
+              <div style="display: inline; text-align: right">
+                <div
+                  style="
+                    max-width: 87px;
+                    min-width: 87px;
+                    display: inline-block;
+                  "
+                >
+                  0.0000
+                </div>
+                <div
+                  style="
+                    max-width: 40px;
+                    min-width: 40px;
+                    display: inline-block;
+                  "
+                >
+                  0.0
+                </div>
+              </div>
+            </td>
+            <td style="text-align: right">0.00</td>
+            <td style="text-align: right">0.9425</td>
+            <td style="text-align: right">-15,000.00</td>
+          </tr>
+        </table>
       </div>
     </main>
 
