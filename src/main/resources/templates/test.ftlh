@@ -12,20 +12,20 @@
         margin-right: 100px;
         font-family: EmbArial;
         margin-top: 40mm;
+        margin-bottom: 40mm;
         @top-left {
           content: element(header);
         }
-
-        /* @bottom-left {
-        content: element(footer);
-      } */
+        @bottom-left {
+          content: element(footer);
+        }
       }
 
       body {
         font-family: EmbArial;
       }
 
-      .header {
+      header {
         text-align: left;
         position: running(header);
         font-size: 12px;
@@ -36,15 +36,13 @@
       }
 
       main {
-        max-height: 750px;
         border: 2px solid red;
       }
 
       footer {
         font-size: 11px;
         border: 2px solid;
-        position: fixed;
-        bottom: 0;
+        position: running(footer);
       }
 
       body {
@@ -62,7 +60,7 @@
   </head>
 
   <body>
-    <div class="header">
+    <header>
       <div
         style="
           display: inline-block;
@@ -102,7 +100,25 @@
           </tr>
         </table>
       </div>
-    </div>
+    </header>
+
+    <footer>
+      <p style="line-height: 1.2; font-size: 12px">
+        This is computer generated advice and no signature is required. Please
+        advise Bank Islam within seven (7) business days from the date of
+        issuance of this advice if there is any discrepancy. For any change of
+        information, kindly visit our nearest branch.
+      </p>
+      <div style="font-size: 12px; text-align: center">
+        <p>
+          <span style="font-family: EmbArial">Bank Islam Malaysia Berhad</span>
+          <span style="font-size: 8px">(No. 98127-X)</span> Level 32, Menara
+          Bank Islam,No. 22, Jalan Perak, 50450 Kuala Lumpur.Tel: (603) 2088
+          8000 Fax: (603) 2088 8028 Telex: MA 31783 Swift: BIMBMYKL
+          www.bankislam.com.my
+        </p>
+      </div>
+    </footer>
 
     <main>
       <div style="background-color: rgb(202, 196, 255)">
@@ -180,31 +196,5 @@
     </main>
 
     <!-- INFO BOX -->
-
-    <footer class="footer">
-      <div
-        style="
-          width: 100%;
-          border: none;
-          border-top: 1px dashed #000;
-          margin-top: 3px;
-        "
-      ></div>
-      <p style="line-height: 1.2; font-size: 12px">
-        This is computer generated advice and no signature is required. Please
-        advise Bank Islam within seven (7) business days from the date of
-        issuance of this advice if there is any discrepancy. For any change of
-        information, kindly visit our nearest branch.
-      </p>
-      <div style="font-size: 12px; text-align: center">
-        <p>
-          <span style="font-family: EmbArial">Bank Islam Malaysia Berhad</span>
-          <span style="font-size: 8px">(No. 98127-X)</span> Level 32, Menara
-          Bank Islam,No. 22, Jalan Perak, 50450 Kuala Lumpur.Tel: (603) 2088
-          8000 Fax: (603) 2088 8028 Telex: MA 31783 Swift: BIMBMYKL
-          www.bankislam.com.my
-        </p>
-      </div>
-    </footer>
   </body>
 </html>
