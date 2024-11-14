@@ -106,7 +106,7 @@
       tbody tr {
         page-break-inside: avoid;
       } */
-
+      /* https://stackoverflow.com/questions/274149/repeat-table-headers-in-print-mode */
       table {
         -fs-table-paginate: paginate;
       }
