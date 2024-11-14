@@ -1,441 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>reminder</title>
 
-<head>
-  <title>reminder</title>
+    <meta charset="utf-8" />
 
-  <meta charset="utf-8" />
+    <style type="text/css">
+      @page {
+        size: A4;
+        margin-left: 100px;
+        margin-right: 100px;
+        font-family: EmbArial;
+        margin-top: 40mm;
+        @top-left {
+          content: element(header);
+        }
 
-  <style type="text/css">
-    @page {
-      size: A4;
-      margin-left: 100px;
-      margin-right: 100px;
-      font-family: EmbArial;
-      margin-top: 70mm; 
-      /* margin-bottom: 70mm;  */
-    /* size: 21cm 29.7cm; */
-      /* margin: 30mm 45mm 30mm 45mm; */
-      @top-left {
-        content: element(header);
-      }
-
-      /* @bottom-left {
+        /* @bottom-left {
         content: element(footer);
       } */
-    }
+      }
 
-    body {
-      font-family: EmbArial;
-    }
+      body {
+        font-family: EmbArial;
+      }
 
-    .header {
-      text-align: left;
-      position: running(header);
-      font-size: 12px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-family: EmbArial;
-      background-color: pink;
+      .header {
+        text-align: left;
+        position: running(header);
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: EmbArial;
+        background-color: pink;
+      }
 
-    }
+      main {
+        max-height: 750px;
+        border: 2px solid red;
+      }
 
-    footer {
-      /* text-align: left;
-      position: relative;
-      font-size: 10px;
-      margin-top: 20px; */
-      position: fixed;
+      footer {
+        font-size: 11px;
+        border: 2px solid;
+        position: fixed;
         bottom: 0;
-    }
+      }
 
-    body {
-      font-family: EmbArial;
-    }
+      body {
+        font-family: EmbArial;
+      }
 
-    .justify {
-      text-align: justify;
-    }
+      .justify {
+        text-align: justify;
+      }
 
-    .spaced-text {
-      display: block;
-      padding-left: 30px;
-    }
+      .page-break {
+        page-break-before: always;
+      }
+    </style>
+  </head>
 
-    .title {
-      font-weight: bold;
-      font-size: 14px;
-      margin-top: 10px;
-      padding-left: 250px;
-    }
-
-    .not-bold {
-      font-weight: normal;
-      width: 160px;
-    }
-
-    .padding-td {
-      padding-left: 10px;
-      padding-right: 5px;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
-    .section-title {
-      font-weight: normal;
-      padding-top: 3px;
-      font-size: 12px;
-    }
-
-    .table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 4px;
-      font-size: 12px;
-    }
-
-    .table th {
-      text-align: left;
-      border-top: 1px dashed #000;
-    }
-
-    .table th {
-      font-weight: normal;
-      border-bottom: 1px solid #000;
-    }
-
-    /*     
-    .footer {
-      margin-top: 180px;
-      font-size: 12px;
-    } */
-
-    .tableHeaderInfo {
-      border: 1px solid #000;
-      text-align: center;
-      width: 50%;
-      padding: 5px;
-    }
-
-    .tableColInfo {
-      border: 1px solid #000;
-      padding: 5px;
-      width: 50%;
-    }
-
-    .page-break {
-      page-break-before: always;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="header">
-    <div style="display: inline-block;text-align: left;">
-      <svg version=" 1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800.000000 185.000000"
-        preserveAspectRatio="xMidYMid meet" style="
-            vertical-align: middle;
-            margin-left: 5px;
-            width: 216px;
-            height: 50px;
-            display: inline-block;
-          ">
-        <g transform="translate(0.000000,185.000000) scale(0.100000,-0.100000)" fill="#5F6062" stroke="none">
-          <path fill="#C61846" d="M4713 1829 c-203 -24 -411 -83 -579 -165 -393 -191 -588 -502 -520
-			 -825 54 -252 276 -491 606 -648 586 -280 1403 -245 1883 81 113 77 250 221
-			 291 308 9 19 11 27 4 16 -106 -156 -226 -259 -413 -351 -237 -118 -477 -169
-			 -790 -168 -468 2 -883 146 -1159 404 -247 231 -316 530 -180 789 127 243 430
-			 437 804 516 150 31 336 47 480 41 81 -4 99 -3 60 3 -71 10 -394 10 -487 -1z" />
-          <path d="M1105 1408 c-7 -18 -85 -212 -174 -432 -88 -219 -168 -409 -176 -423
-			 -17 -26 -71 -53 -105 -53 -11 0 -20 -4 -20 -9 0 -12 309 -11 316 0 3 5 -10 9
-			 -29 9 -70 0 -71 32 -8 195 l39 100 150 3 149 3 53 -142 c49 -131 52 -143 36
-			 -154 -15 -12 -15 -13 0 -19 25 -10 553 -5 560 5 3 5 -11 9 -30 9 -22 0 -45 9
-			 -62 23 l-27 24 -8 189 c-4 104 -8 244 -8 311 l-1 122 52 -57 c141 -155 635
-			 -642 650 -642 16 0 18 13 19 128 0 70 4 268 7 440 l7 314 24 19 c13 10 36 19
-			 52 19 16 0 29 5 29 10 0 6 -62 10 -165 10 -103 0 -165 -4 -165 -10 0 -5 18
-			 -10 39 -10 23 0 48 -8 62 -19 23 -18 23 -21 32 -331 4 -172 5 -315 2 -318 -3
-			 -4 -10 -1 -14 6 -4 7 -115 122 -247 255 -131 133 -284 288 -338 345 -54 56
-			 -103 102 -107 102 -15 0 -18 -63 -23 -466 -3 -220 -10 -412 -15 -426 -13 -35
-			 -53 -43 -99 -21 -51 25 -77 78 -251 510 -82 204 -154 381 -161 392 -15 30 -29
-			 26 -45 -11z m54 -371 c30 -83 56 -158 59 -164 3 -10 -24 -13 -117 -13 -67 0
-			 -121 3 -121 8 -1 12 115 322 120 322 3 0 29 -69 59 -153z" />
-          <path d="M6286 1413 c-7 -16 -84 -203 -170 -417 -86 -213 -166 -406 -177 -428
-			 -13 -26 -32 -44 -54 -54 -46 -19 -69 -18 -61 2 12 32 19 154 9 154 -6 0 -13
-			 -14 -17 -31 -15 -76 -94 -108 -232 -93 -97 10 -110 25 -119 145 -4 52 -5 221
-			 -3 375 3 260 4 284 22 303 13 14 31 21 58 21 21 0 38 5 38 10 0 6 -72 10 -195
-			 10 -123 0 -195 -4 -195 -10 0 -5 13 -10 30 -10 48 0 79 -20 85 -54 4 -17 5
-			 -204 3 -414 l-3 -384 -24 -19 c-13 -10 -36 -19 -53 -19 -16 0 -27 -4 -24 -9 8
-			 -12 916 -13 916 -1 0 6 -9 10 -21 10 -35 0 -59 19 -59 47 0 15 19 77 42 140
-			 l43 113 150 0 150 0 49 -133 c27 -72 51 -138 53 -144 3 -7 -5 -17 -18 -21
-			 l-23 -9 26 -6 c37 -10 508 -6 508 3 0 4 -17 10 -37 14 -58 9 -68 19 -65 69 1
-			 43 60 502 66 522 2 6 27 -42 56 -105 63 -134 237 -479 252 -497 6 -7 14 -10
-			 19 -7 9 5 182 356 264 536 22 48 43 87 46 88 3 0 18 -91 33 -202 15 -112 31
-			 -227 37 -257 13 -77 12 -141 -3 -141 -8 0 -8 -3 -2 -9 14 -15 300 -26 308 -12
-			 5 7 -1 11 -16 11 -51 0 -98 21 -113 50 -14 27 -41 196 -112 687 -29 198 -34
-			 217 -56 193 -8 -8 -85 -163 -172 -345 -86 -181 -163 -341 -170 -355 -12 -24
-			 -21 -10 -159 275 -181 374 -208 427 -223 432 -6 2 -14 -4 -17 -14 -3 -10 -33
-			 -198 -66 -418 -33 -220 -65 -417 -70 -437 -26 -92 -100 -76 -155 32 -13 25
-			 -85 198 -160 385 -160 398 -185 455 -196 455 -5 0 -15 -12 -23 -27z m53 -388
-			 c28 -77 51 -145 51 -152 0 -10 -29 -13 -121 -13 -111 0 -121 1 -114 18 4 9 32
-			 84 63 165 34 92 58 143 63 135 4 -8 30 -76 58 -153z" />
-          <path d="M4897 1420 c-229 -58 -266 -295 -74 -464 34 -30 87 -74 117 -98 84
-			 -67 115 -117 115 -186 0 -95 -56 -146 -160 -147 -107 0 -173 56 -190 163 -4
-			 23 -10 42 -14 42 -10 0 -21 -86 -21 -162 0 -54 2 -58 31 -73 40 -21 160 -34
-			 235 -25 162 20 268 145 249 295 -12 100 -58 162 -213 286 -126 101 -152 134
-			 -152 197 0 34 6 49 34 79 31 34 39 37 98 41 47 3 74 0 96 -12 35 -18 82 -75
-			 82 -99 0 -23 11 -47 21 -47 5 0 9 43 9 95 0 94 0 96 -26 105 -38 15 -193 21
-			 -237 10z" />
-          <path d="M0 1400 c0 -5 18 -10 39 -10 23 0 48 -8 62 -19 l24 -19 3 -324 c2
-			 -177 -1 -363 -6 -412 -11 -98 -23 -116 -74 -116 -15 0 -28 -4 -28 -9 0 -6 99
-			 -9 238 -8 219 2 241 4 283 23 149 69 210 230 135 358 -30 52 -71 88 -138 122
-			 l-49 25 49 54 c124 136 81 298 -89 334 -64 14 -449 15 -449 1z m416 -71 c80
-			 -73 85 -246 10 -294 -21 -13 -74 -20 -128 -17 l-28 2 0 171 0 171 60 -4 c46
-			 -3 66 -10 86 -29z m4 -384 c134 -69 186 -304 85 -380 -68 -53 -202 -40 -225
-			 20 -12 30 -14 368 -2 379 10 12 109 -2 142 -19z" />
-          <path d="M2630 1400 c0 -5 18 -10 40 -10 58 0 80 -26 80 -92 3 -436 -1 -727
-			 -11 -755 -9 -28 -16 -34 -50 -39 -85 -14 -30 -22 146 -22 182 0 243 9 145 22
-			 -37 5 -53 12 -62 29 -14 26 -25 417 -12 417 5 0 15 -9 21 -19 22 -36 269 -315
-			 320 -362 80 -75 101 -82 246 -87 134 -5 162 5 78 27 -94 24 -178 96 -429 370
-			 l-122 133 33 37 c44 48 266 264 297 289 35 27 97 52 131 52 16 0 29 5 29 10 0
-			 6 -58 10 -155 10 -97 0 -155 -4 -155 -10 0 -5 7 -10 15 -10 26 0 16 -43 -21
-			 -90 -35 -45 -283 -300 -292 -300 -7 0 4 344 12 363 5 10 24 20 47 23 88 14 28
-			 24 -146 24 -117 0 -185 -4 -185 -10z" />
-          <path d="M4270 1400 c0 -5 13 -10 29 -10 16 0 39 -9 52 -19 l24 -19 0 -399 c0
-			 -305 -3 -403 -13 -420 -8 -15 -26 -25 -52 -29 -87 -14 -31 -22 155 -22 186 -1
-			 263 10 153 20 -92 9 -88 -11 -88 449 0 386 1 400 20 419 11 11 33 20 50 20 17
-			 0 30 5 30 10 0 6 -67 10 -180 10 -113 0 -180 -4 -180 -10z" />
-        </g>
-      </svg>
+  <body>
+    <div class="header">
+      <div
+        style="
+          display: inline-block;
+          font-size: 12px;
+          font-family: EmbArial;
+          line-height: 1.2;
+        "
+      >
+        <table
+          style="
+            font-weight: normal;
+            border-spacing: 0;
+            border-collapse: collapse;
+          "
+        >
+          <tr>
+            <th class="not-bold" style="padding: 0">Account Number 01</th>
+            <td class="padding-td">:</td>
+            <td style="padding: 0">${contextVariables.accountNo!}</td>
+          </tr>
+          <tr>
+            <th class="not-bold" style="padding: 0">
+              Unit Trust Consultant (UTC)
+            </th>
+            <td class="padding-td">:</td>
+            <td style="padding: 0">${contextVariables.utc!}</td>
+          </tr>
+          <tr>
+            <th class="not-bold" style="padding: 0">UTC Contact No.</th>
+            <td class="padding-td">:</td>
+            <td style="padding: 0">${contextVariables.utcContactNo!}</td>
+          </tr>
+          <tr>
+            <th class="not-bold" style="padding: 0">Branch</th>
+            <td class="padding-td">:</td>
+            <td style="padding: 0">${contextVariables.branch!}</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
-    <div style=" margin-left: 5px;">
-      <p class="justify" style="
-                  font-size: 10px;
-                  font-family: EmbArialBold;
-                    max-height: 90px;
-                   min-height: 90px;
-                   height: 90px;">
-        ${contextVariables.name}
-        <br />
-        <span>
-          <#compress>
-            <#if contextVariables.add1?has_content && contextVariables.add1?trim !=''>
-              ${contextVariables.add1?html}
-              <br />
-            </#if>
-            <#if contextVariables.add2?has_content && contextVariables.add2?trim !=''>
-              ${contextVariables.add2?html}
-              <br />
-            </#if>
-            <#if contextVariables.add3?has_content && contextVariables.add3?trim !=''>
-              ${contextVariables.add3?html}
-              <br />
-            </#if>
-            <#if contextVariables.add4?has_content && contextVariables.add4?trim !=''>
-              ${contextVariables.add4?html}
-              <br />
-            </#if>
-            <#if contextVariables.poskod?has_content && contextVariables.poskod?trim !=''>
-              ${contextVariables.poskod?html}
-              <br />
-            </#if>
-            <#if contextVariables.city?has_content && contextVariables.city?trim !=''>
-              ${contextVariables.city?html}
-            </#if>
-          </#compress>
-        </span>
+    <main>
+      <div style="background-color: rgb(202, 196, 255)">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis esse
+          rerum totam mollitia cumque, atque qui odio dolorum ratione
+          necessitatibus beatae sapiente quos quisquam, consectetur voluptatibus
+          voluptate repellat. Quis, doloribus. Illo alias vitae, debitis odit ut
+          deleniti aliquam magni facere, est perspiciatis aperiam ea fugiat
+          minima voluptas corrupti. Labore quisquam eos vero perferendis cumque
+          suscipit odio similique culpa totam iusto! Sequi quasi iste numquam
+          quos officiis natus, repellendus facilis doloribus voluptatibus magnam
+          officia, ad minima ipsa consectetur incidunt tenetur. Nobis doloribus
+          quod, sapiente consequuntur amet assumenda autem nesciunt natus
+          ducimus. Id reprehenderit optio consectetur porro magnam, quod alias
+          repellat quo modi praesentium in aperiam. Officiis id ex incidunt odio
+          ut aliquid, deserunt a, nam molestias, dolorum ipsa enim aspernatur
+          quo. Ducimus, ullam quibusdam. Eius eos maiores maxime aliquam,
+          tempora delectus, amet non quos necessitatibus, laudantium cumque
+          consequatur ducimus impedit iure eveniet autem rem! Accusantium unde
+          quos magni, laborum deserunt iste. Voluptatum quo perspiciatis
+          voluptate deserunt optio veritatis ipsam accusamus sequi alias id amet
+          sint enim rem vitae voluptatem sunt laboriosam, perferendis at et
+          doloremque soluta iure suscipit eos. Odit, corporis? Commodi ipsam
+          eligendi sunt unde? Voluptatem quos similique sunt voluptatum minima
+          veritatis perspiciatis aliquam nemo ipsum consequatur magni tenetur
+          enim mollitia, in, optio assumenda, commodi animi quaerat! Deserunt,
+          id officiis. Numquam rerum quia iure atque iusto, unde ex ducimus? Ad
+          aspernatur, maxime, impedit optio at deleniti earum doloremque, culpa
+          vero laborum possimus necessitatibus facere nisi ipsam quaerat. Alias,
+          dolorum at. Autem, iusto numquam ab labore voluptate voluptatum
+          commodi odit. Molestias, rem perspiciatis in cumque, exercitationem
+          distinctio sunt voluptatum temporibus maxime consequatur recusandae
+          dolorum harum porro neque quaerat, eum tenetur assumenda. Omnis,
+          repellat amet. A aperiam tenetur in consectetur, voluptates
+          cupiditate, pariatur odit incidunt atque fuga fugit sequi cumque unde!
+          Porro quae nemo hic explicabo similique quam? Earum quidem expedita
+          dolorem! Quis debitis recusandae necessitatibus sint officia quam
+          laudantium veniam sequi rerum, adipisci ducimus rem autem odit eveniet
+          consectetur architecto asperiores corrupti mollitia, unde fugiat
+          aperiam eius. Quas porro provident exercitationem. Ex accusamus magni
+          reprehenderit quam, debitis, quia nam maxime est aliquid, eum fugit
+          itaque tempore repudiandae molestias nemo quasi. Nostrum maiores
+          expedita illum iure, cupiditate repellat quae eaque impedit suscipit?
+          Doloribus vitae natus eligendi veniam illo quos aspernatur! Quisquam
+          ex, distinctio facere qui aspernatur beatae reprehenderit adipisci
+          provident praesentium nesciunt quidem veritatis incidunt delectus
+          reiciendis necessitatibus ab atque soluta nisi? Debitis consectetur,
+          expedita eveniet assumenda pariatur temporibus voluptatum fugit illum
+          necessitatibus nulla et nam asperiores numquam harum inventore veniam
+          ea tenetur error quibusdam omnis quas consequatur? Vero illum harum
+          explicabo? Nisi asperiores ullam iure, sunt deleniti, rerum corrupti
+          nulla dolores deserunt commodi at tempora aliquid, non magnam quidem
+          dolorem enim repellendus rem harum odit? Tenetur quod pariatur totam
+          modi iure? Sapiente eum odit architecto voluptate cumque,
+          reprehenderit, sed provident dolorem hic eligendi accusantium impedit
+          consequuntur! Dolor minus praesentium reprehenderit asperiores? Minus
+          voluptas non libero ducimus corporis mollitia! Provident, aperiam rem!
+          Beatae non voluptatem inventore enim debitis, autem provident, ut odio
+          dolor doloremque nam culpa, voluptatibus dolores placeat illo
+          voluptates saepe? Suscipit nostrum debitis assumenda possimus,
+          corporis quae fugit tenetur libero. Quod excepturi nesciunt quis quos
+          reiciendis quaerat officiis quam odio rem doloremque sapiente
+          voluptatum aut nemo, corporis culpa accusamus dolore earum laboriosam
+          ipsam distinctio possimus optio. Atque mollitia blanditiis
+          dignissimos. At consequatur dicta perspiciatis laudantium ullam
+          voluptatibus earum corrupti pariatur! Exercitationem quos amet magnam
+          incidunt officiis ipsum deleniti dolorum, aliquid totam deserunt vero
+          sit libero eum voluptas aut ipsa ab? Accusamus, voluptates molestias
+          libero quos maxime quidem dolorum fugit nemo recusandae magni ipsam
+          tempore mollitia, modi quo vel neque, eaque veritatis a! Blanditiis
+          deleniti est commodi iusto, non ab fugit!
+        </p>
+      </div>
+    </main>
+
+    <!-- INFO BOX -->
+
+    <footer class="footer">
+      <div
+        style="
+          width: 100%;
+          border: none;
+          border-top: 1px dashed #000;
+          margin-top: 3px;
+        "
+      ></div>
+      <p style="line-height: 1.2; font-size: 12px">
+        This is computer generated advice and no signature is required. Please
+        advise Bank Islam within seven (7) business days from the date of
+        issuance of this advice if there is any discrepancy. For any change of
+        information, kindly visit our nearest branch.
       </p>
-    </div>
-    <div style="
-            display: inline-block;
-            font-size: 12px;
-            font-family: EmbArial;
-            line-height: 1.2;
-          ">
-      <table style="
-              font-weight: normal;
-              border-spacing: 0;
-              border-collapse: collapse;
-            ">
-        <tr>
-          <th class="not-bold" style="padding: 0">Account Number</th>
-          <td class="padding-td">:</td>
-          <td style="padding: 0">${contextVariables.accountNo!}</td>
-        </tr>
-        <tr>
-          <th class="not-bold" style="padding: 0">
-            Unit Trust Consultant (UTC)
-          </th>
-          <td class="padding-td">:</td>
-          <td style="padding: 0">${contextVariables.utc!}</td>
-        </tr>
-        <tr>
-          <th class="not-bold" style="padding: 0">UTC Contact No.</th>
-          <td class="padding-td">:</td>
-          <td style="padding: 0">${contextVariables.utcContactNo!}</td>
-        </tr>
-        <tr>
-          <th class="not-bold" style="padding: 0">Branch</th>
-          <td class="padding-td">:</td>
-          <td style="padding: 0">${contextVariables.branch!}</td>
-        </tr>
-      </table>
-    </div>
-
-  </div>
-
-  <div style="background-color: rgb(202, 196, 255);">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis esse rerum totam mollitia cumque, atque qui odio
-      dolorum ratione necessitatibus beatae sapiente quos quisquam, consectetur voluptatibus voluptate repellat. Quis,
-      doloribus.
-      Illo alias vitae, debitis odit ut deleniti aliquam magni facere, est perspiciatis aperiam ea fugiat minima
-      voluptas corrupti. Labore quisquam eos vero perferendis cumque suscipit odio similique culpa totam iusto!
-      Sequi quasi iste numquam quos officiis natus, repellendus facilis doloribus voluptatibus magnam officia, ad minima
-      ipsa consectetur incidunt tenetur. Nobis doloribus quod, sapiente consequuntur amet assumenda autem nesciunt natus
-      ducimus.
-      Id reprehenderit optio consectetur porro magnam, quod alias repellat quo modi praesentium in aperiam. Officiis id
-      ex incidunt odio ut aliquid, deserunt a, nam molestias, dolorum ipsa enim aspernatur quo.
-      Ducimus, ullam quibusdam. Eius eos maiores maxime aliquam, tempora delectus, amet non quos necessitatibus,
-      laudantium cumque consequatur ducimus impedit iure eveniet autem rem! Accusantium unde quos magni, laborum
-      deserunt iste.
-      Voluptatum quo perspiciatis voluptate deserunt optio veritatis ipsam accusamus sequi alias id amet sint enim rem
-      vitae voluptatem sunt laboriosam, perferendis at et doloremque soluta iure suscipit eos. Odit, corporis?
-      Commodi ipsam eligendi sunt unde? Voluptatem quos similique sunt voluptatum minima veritatis perspiciatis aliquam
-      nemo ipsum consequatur magni tenetur enim mollitia, in, optio assumenda, commodi animi quaerat! Deserunt, id
-      officiis.
-      Numquam rerum quia iure atque iusto, unde ex ducimus? Ad aspernatur, maxime, impedit optio at deleniti earum
-      doloremque, culpa vero laborum possimus necessitatibus facere nisi ipsam quaerat. Alias, dolorum at.
-      Autem, iusto numquam ab labore voluptate voluptatum commodi odit. Molestias, rem perspiciatis in cumque,
-      exercitationem distinctio sunt voluptatum temporibus maxime consequatur recusandae dolorum harum porro neque
-      quaerat, eum tenetur assumenda.
-      Omnis, repellat amet. A aperiam tenetur in consectetur, voluptates cupiditate, pariatur odit incidunt atque fuga
-      fugit sequi cumque unde! Porro quae nemo hic explicabo similique quam? Earum quidem expedita dolorem!
-      Quis debitis recusandae necessitatibus sint officia quam laudantium veniam sequi rerum, adipisci ducimus rem autem
-      odit eveniet consectetur architecto asperiores corrupti mollitia, unde fugiat aperiam eius. Quas porro provident
-      exercitationem.
-      Ex accusamus magni reprehenderit quam, debitis, quia nam maxime est aliquid, eum fugit itaque tempore repudiandae
-      molestias nemo quasi. Nostrum maiores expedita illum iure, cupiditate repellat quae eaque impedit suscipit?
-      Doloribus vitae natus eligendi veniam illo quos aspernatur! Quisquam ex, distinctio facere qui aspernatur beatae
-      reprehenderit adipisci provident praesentium nesciunt quidem veritatis incidunt delectus reiciendis necessitatibus
-      ab atque soluta nisi?
-      Debitis consectetur, expedita eveniet assumenda pariatur temporibus voluptatum fugit illum necessitatibus nulla et
-      nam asperiores numquam harum inventore veniam ea tenetur error quibusdam omnis quas consequatur? Vero illum harum
-      explicabo?
-      Nisi asperiores ullam iure, sunt deleniti, rerum corrupti nulla dolores deserunt commodi at tempora aliquid, non
-      magnam quidem dolorem enim repellendus rem harum odit? Tenetur quod pariatur totam modi iure?
-      Sapiente eum odit architecto voluptate cumque, reprehenderit, sed provident dolorem hic eligendi accusantium
-      impedit consequuntur! Dolor minus praesentium reprehenderit asperiores? Minus voluptas non libero ducimus corporis
-      mollitia! Provident, aperiam rem!
-      Beatae non voluptatem inventore enim debitis, autem provident, ut odio dolor doloremque nam culpa, voluptatibus
-      dolores placeat illo voluptates saepe? Suscipit nostrum debitis assumenda possimus, corporis quae fugit tenetur
-      libero.
-      Quod excepturi nesciunt quis quos reiciendis quaerat officiis quam odio rem doloremque sapiente voluptatum aut
-      nemo, corporis culpa accusamus dolore earum laboriosam ipsam distinctio possimus optio. Atque mollitia blanditiis
-      dignissimos.
-      At consequatur dicta perspiciatis laudantium ullam voluptatibus earum corrupti pariatur! Exercitationem quos amet
-      magnam incidunt officiis ipsum deleniti dolorum, aliquid totam deserunt vero sit libero eum voluptas aut ipsa ab?
-      Accusamus, voluptates molestias libero quos maxime quidem dolorum fugit nemo recusandae magni ipsam tempore
-      mollitia, modi quo vel neque, eaque veritatis a! Blanditiis deleniti est commodi iusto, non ab fugit!
-    </p>
-
-  </div>
-  <!-- INFO BOX -->
-
-  <footer class="footer">
-    <div style="
-              width: 100%;
-              border: none;
-              border-top: 1px dashed  #000;
-              margin-top: 3px;
-              font-size: 10px;
-            "></div>
-
-    <table>
-      <tr>
-        <td>XS</td>
-        <td>:</td>
-        <td>Sales Cancellation</td>
-        <td>DV</td>
-        <td>:</td>
-        <td>Distribution Reinvested</td>
-        <td>SI</td>
-        <td>:</td>
-        <td>Switch-In</td>
-        <td>XR</td>
-        <td>:</td>
-        <td>Redemption Cancellcation</td>
-      </tr>
-      <tr>
-        <td>JI</td>
-        <td>:</td>
-        <td>Adjustment In</td>
-        <td>RI</td>
-        <td>:</td>
-        <td>Transfer In Cancellation</td>
-        <td>SO</td>
-        <td>:</td>
-        <td>Switch-Out</td>
-        <td>JO</td>
-        <td>:</td>
-        <td>Adjustment Out</td>
-      </tr>
-      <tr>
-        <td>TI</td>
-        <td>:</td>
-        <td>Transfer-In</td>
-        <td>RO</td>
-        <td>:</td>
-        <td>Transfer Out Cancellation</td>
-        <td>NS</td>
-        <td>:</td>
-        <td>Investment</td>
-        <td>TO</td>
-        <td>:</td>
-        <td>Transfer-Out</td>
-      </tr>
-      <tr>
-
-        <td>RE</td>
-        <td>:</td>
-        <td>Redemption</td>
-        <td>XI</td>
-        <td>:</td>
-        <td>Switch In Cancellation</td>
-        <td>US</td>
-        <td>:</td>
-        <td>Unit Split</td>
-        <td>XO</td>
-        <td>:</td>
-        <td>Switch Out Cancellation</td>
-      </tr>
-      <tr>
-        <td>CP</td>
-        <td>:</td>
-        <td>Capital Repayment</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-    <div style="
-              width: 100%;
-              border: none;
-              border-top: 1px dashed  #000;
-              margin-top: 3px;
-            "></div>
-    <p style="line-height: 1.2; font-size: 12px;">
-      This is computer generated advice and no signature is required. Please
-      advise Bank Islam within seven (7) business days from the date of
-      issuance of this advice if there is any discrepancy. For any change of
-      information, kindly visit our nearest branch.
-    </p>
-    <div style="font-size: 12px;text-align: center;">
-      <p><span style="font-family: EmbArial;">Bank Islam Malaysia Berhad</span> <span style="font-size: 8px;">(No.
-          98127-X)</span> Level 32, Menara Bank
-        Islam,No. 22, Jalan Perak, 50450 Kuala Lumpur.Tel: (603) 2088 8000 Fax: (603) 2088 8028 Telex: MA 31783 Swift:
-        BIMBMYKL www.bankislam.com.my</p>
-    </div>
-  </footer>
-</body>
-
+      <div style="font-size: 12px; text-align: center">
+        <p>
+          <span style="font-family: EmbArial">Bank Islam Malaysia Berhad</span>
+          <span style="font-size: 8px">(No. 98127-X)</span> Level 32, Menara
+          Bank Islam,No. 22, Jalan Perak, 50450 Kuala Lumpur.Tel: (603) 2088
+          8000 Fax: (603) 2088 8028 Telex: MA 31783 Swift: BIMBMYKL
+          www.bankislam.com.my
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
